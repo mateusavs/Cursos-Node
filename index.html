@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo Node.js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style></style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dados do usuário</h1>
+        <form>
+            <label>Nome:</label>
+            <br/>
+            <input type="text" name="nome" id="nome">
+            <br/>
+
+            <label>Telefone:</label>
+            <br/>
+            <input type="text" name="telefone" id="telefone">
+            <br/>
+
+            <input type="button" value="Enviar" id="enviar">
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        /*
+        function validar(){
+
+        }
+
+        $("#enviar").click(function(){ //função anônima
+
+        });
+        */
+        $(document).ready(function(){
+            $("#enviar").click(() => { //arrow function - função seta
+                var nome = $("#nome").val();
+                var telefone = $("#telefone").val();
+                var resposta;
+
+                if(nome == "" || telefone == ""){
+                    resposta = "<div class='alert alert-danger'>" + 
+                        "DADOS INCOMPLETOS</div>";
+                } else {
+                    resposta = "<div class='alert alert-success'>" + 
+                        "DADOS CORRETOS</div>";                    
+                }
+                $("#resultado").html(resposta);
+            });
+        });
+    </script>
+</body>
+
+</html>
