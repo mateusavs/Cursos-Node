@@ -31,7 +31,7 @@ module.exports = function (app) {
             var categoria = request.body.curso.categoria;
             
             if (codigo.trim().length == 0 || descricao.trim().length == 0
-            ||  ch.trim().length == 0 || categoria.trim().length == 0) {
+            ||  ch.trim().length == 0 || categoria == 0) {
                 response.redirect('/cadCurso');
             }
             else {
