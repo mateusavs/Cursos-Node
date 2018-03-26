@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Cadastro de Cursos - Login</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="floating-labels.css" rel="stylesheet">    
 </head>
 
 <body>
@@ -13,7 +15,6 @@
             <%- usuario.nome %>
         </p>
         <h1>Lista de Cursos</h1>
-        <h4>Selecione uma opção na lista para executá-la</h4>
     </header>
     <section>
         <table>
@@ -45,7 +46,7 @@
             </tbody>
         </table>
         <br>
-        <a href='./menu'>Voltar</a>
+        <a href='./menu' class="btn btn-sm btn-primary btn-block col-md-1">Voltar</a>
     </section>
     <footer>
         <br>

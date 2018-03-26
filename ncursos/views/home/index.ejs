@@ -5,28 +5,33 @@
     <meta charset="utf-8">
     <title>Cadastro de Cursos - Login</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="floating-labels.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Login</h1>
-        <h4>Entre com suas credenciais</h4>
-    </header>
     <section>
-        <form action="/login" method="post">
-            Nome:
-            <br/>
-            <input type="text" name="usuario[nome]" placeholder="Nome">
-            <br> Senha:
-            <br/>
-            <input type="password" name="usuario[senha]" placeholder="Senha">
+        <form class="form-signin" action="/login" method="post">
+            <div class="mb-4">
+                <h1 class="mb-4">Login</h1>
+                <h4 class="mb-4">Entre com suas credenciais</h4>
+            </div>
+            <div class="form-label-group col-xs-9 col-md-4">
+                Nome:
+                <br/>
+                <input style="width: 200px;"  type="text" name="usuario[nome]" class="form-control" placeholder="Nome" >
+            </div>
+
+            <div class="form-label-group col-xs-9 col-md-4 ">
+                Senha:
+                <input style="width: 200px;" type="password" name="usuario[senha]" class="form-control " placeholder="Senha">
+            </div>
             <br>
-            <button type="submit">Login</button>
+            <div class="form-label-group col-xs-9 col-md-9 ">
+                <button style="width: 200px;" type="submit" class="btn btn-lg btn-primary btn-block col-md-1 ">Login</button>
+            </div>
         </form>
     </section>
-    <footer>
-        <small>Sistema de Cadastro de Cursos</small>
-    </footer>
 </body>
 
 </html>

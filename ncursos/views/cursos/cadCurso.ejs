@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Cadastro de Cursos - Login</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="floating-labels.css" rel="stylesheet">    
 </head>
 
 <body>
@@ -19,16 +21,16 @@
         <form action="/novoCurso" method="post">
             Código:
             <br/>
-            <input type="text" name="curso[codigo]" placeholder="Código">
+            <input type="text" name="curso[codigo]" placeholder="Código" style="width: 200px;">
             <br> Descrição:
             <br />
-            <input type="text" name="curso[descricao]" placeholder="Descrição">
+            <input type="text" name="curso[descricao]" placeholder="Descrição" style="width: 200px;">
             <br> Carga Horária:
             <br />
-            <input type="text" name="curso[ch]" placeholder="Carga Horária">
+            <input type="text" name="curso[ch]" placeholder="Carga Horária" style="width: 200px;">
             <br> Categoria:
             <br />
-            <select name="curso[categoria]">
+            <select name="curso[categoria]" class="form-control" style="width: 200px;">
                 <option disabled value = "0" selected>Selecione</option>
                 <option value="Desenvolvimento">Deselvovimento</option>
                 <option value="Design">Design</option>
@@ -36,10 +38,10 @@
                 <option value="Outros">Outros</option>
             </select>
             <br>
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btn btn-success">Enviar</button>
         </form>
         <br>
-        <a href='./menu'>Voltar</a>
+        <a href='./menu' class="btn btn-sm btn-primary btn-block col-md-1">Voltar</a>
     </section>
     <footer>
         <br>

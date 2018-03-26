@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Cadastro de Cursos - Menu de Opções</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="floating-labels.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,17 +18,17 @@
         <h4>Escolha sua opção</h4>
     </header>
     <section>
-        <ul>
+        <ul class="list-group">
             <li>
-                <a class="list-group-item" href="/cadCurso">Cadastro de Cursos</a>
+                <a class="list-group-item" href="/cadCurso" style="width: 200px;" >Cadastro de Cursos</a>
             </li>
             <li>
-                <a class="list-group-item" href="/listaCursos">Lista de Cursos</a>
+                <a class="list-group-item" href="/listaCursos" style="width: 200px;">Lista de Cursos</a>
             </li>
         </ul>
     </section>
     <section>
-        <a href='/logout'>Logout</a>
+        <a href='/logout' class="btn btn-sm btn-primary btn-block col-md-1">Logout</a>
     </section>
     <footer>
         <small>Sistema de Cadastro de Cursos</small>
